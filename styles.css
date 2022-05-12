@@ -1,0 +1,76 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  --white: hsl(0, 0%, 100%);
+
+  --very-dark-blue-MG: hsl(217, 54%, 11%);
+  --very-dark-blue-CG: hsl(216, 50%, 16%);
+  --very-dark-blue-Line: hsl(215, 32%, 27%);
+
+  --font-weight-300: 300;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+
+  --transition: 0.4s all ease-in-out;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue-MG);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 19px;
+  font-weight: var(--font-weight-300);
+  color: var(--soft-blue);
+}
+/*main*/
+.container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.card {
+  background-color: var(--very-dark-blue-CG);
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  box-shadow: 0, 0, 60px, 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 25px;
+  position: relative;
+}
+.card-image {
+  max-width: 300px;
+  border: 25px;
+  border-radius: 10px;
+}
+
+.card-title,
+.card-meniton {
+  margin-left: 25px;
+}
+.card-price-days {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--very-dark-blue-Line);
+}
+.card-days {
+  color: var(--soft-blue);
+  display: flex;
+}
+.card-price-days span {
+  margin-left: 0.5rem;
+}
+.card-price {
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+}
